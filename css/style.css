@@ -1,0 +1,204 @@
+/* Global Start  */
+
+@font-face {
+  font-family: allianec1;
+  src: url(../font/Degarism\ Studio\ -\ Alliance\ No.1\ Light.otf);
+}
+
+html {
+  font-size: 10px;
+}
+
+::placeholder {
+  font-size: 1.6rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+}
+
+a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+/* Global End  */
+
+/* Background Start  */
+.vpt {
+  width: 100%;
+  height: 85vh;
+  background: linear-gradient(
+    to bottom right,
+    #042760,
+    #040e22,
+    #040e24,
+    #042760,
+    #451e47
+  );
+}
+/* Background End  */
+
+/* Navbar Start  */
+ul.navbar-nav li a {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+ul.navbar-nav li a:hover,
+a:hover {
+  color: rgba(255, 255, 255, 0.678);
+  text-decoration: none;
+}
+
+.input-group input[type="text"] {
+  background: hsla(223, 26%, 21%, 1);
+  outline: hsl(220, 26%, 10%);
+  border: 1px solid hsl(223, 26%, 35%);
+  border-radius: 6px;
+  padding: 8px 12px;
+  width: 210px;
+  height: 35px;
+}
+
+.input-group-text {
+  background: hsl(223, 26%, 21%);
+  color: #fff;
+  border: 1px solid hsl(223, 26%, 35%);
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.link {
+  margin: 0 16px;
+}
+
+.sing-up-btn {
+  padding: 4px 8px;
+}
+/* Navbar End  */
+
+/* Main Secation Start */
+
+/* Section-1 Start */
+.pb-md-9 {
+  padding-bottom: 80px;
+}
+.rounded {
+  border-radius: 1.25rem !important;
+}
+
+.col-height {
+  height: 500px;
+  width: 100%;
+}
+
+.col-height img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+}
+
+.col-height h1 {
+  color: #fff;
+  font-size: 6.4rem;
+  font-family: allianec1;
+  font-weight: 800;
+  letter-spacing: -1.92px;
+  line-height: 6.8rem;
+  margin: 0 0 1.6rem;
+}
+
+.z-2 {
+  z-index: 2 !important;
+}
+
+.home-tagline-appendix {
+  animation-name: home-tagline-in-out;
+  animation-duration: 1750ms;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0.48, 0.08, 0.19, 1);
+}
+
+.home-tagline-appendix:last-of-type {
+  animation-name: home-tagline-in;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  .home-tagline-appendix {
+    animation: none;
+  }
+  .home-tagline-appendix:not(:last-of-type) {
+    display: none;
+  }
+}
+
+@keyframes home-tagline-in {
+  0% {
+    opacity: 0;
+    transform: translateY(120%);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes home-tagline-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(120%);
+  }
+  25%,
+  75% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-120%);
+  }
+}
+.width-full {
+  width: 100% !important;
+}
+
+.col-height p {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: allianec1;
+  line-height: 3.2rem;
+  margin: 16px 0 28px;
+}
+
+.btn-height {
+  height: 4.8rem;
+  border-radius: 5px;
+  color: #fff;
+  font-family: allianec1;
+  font-weight: 700;
+}
+
+.field input[type="text"] {
+  width: 340px;
+  height: 48px;
+  border-radius: 5px;
+  padding: 16px 24px;
+  font-family: allianec1;
+}
+/* section-1 End  */
+
+/* Section-2 Start  */
+#section-2 hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-width: thin;
+  margin: 0;
+}
+#section-2 .py-4 {
+  padding: 24px 0 !important;
+}
+
+#section-2 div * {
+  color: #fff;
+}
+/* Section-2 End  */
+
+/* Main Secation End */
